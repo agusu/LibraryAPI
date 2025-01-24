@@ -82,6 +82,8 @@ Library/
 dotnet test
 ```
 
+![Test ejecutados](https://i.imgur.com/QJdZQxg.png)
+
 # Documentación de Arquitectura
 
 ## Decisiones Técnicas
