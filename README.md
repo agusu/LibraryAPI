@@ -72,6 +72,7 @@ Library/
 
 - GET `/api/books` - Listar libros
 - GET `/api/books/{id}` - Obtener libro
+- GET `/api/books/byauthor/{authorId}` - Obtener libros por autor
 - POST `/api/books` - Crear libro
 - PUT `/api/books/{id}` - Actualizar libro
 - DELETE `/api/books/{id}` - Eliminar libro
