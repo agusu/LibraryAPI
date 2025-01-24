@@ -47,15 +47,15 @@ public class GetBooksQueryHandlerTests
         var authorId = 1;
         var books = new List<Book>
         {
-            new() { Id = 1, Title = "Test Book", AuthorId = authorId }
-        }.AsQueryable();
+            new() { Id = 1, Title = "Test Book", AuthorId = authorId },
+            new() { Id = 2, Title = "Test Book By Different Author", AuthorId = 2 }
+        };
 
         var dbSetMock = CreateDbSetMock(books);
-
         _contextMock.Setup(c => c.Books).Returns(dbSetMock.Object);
 
         var expectedDto = new BookDto(1, "Test Book", "Description", DateTime.Now, authorId, "Author Name");
-        _mapperMock.Setup(m => m.Map<List<BookDto>>(It.IsAny<List<Book>>()))
+        _mapperMock.Setup(m => m.Map<List<BookDto>>(It.IsAny<IEnumerable<Book>>()))
             .Returns(new List<BookDto> { expectedDto });
 
         var handler = new GetBooksByAuthorQueryHandler(_contextMock.Object, _mapperMock.Object);
@@ -77,7 +77,6 @@ public class GetBooksQueryHandlerTests
         dbSetMock.As<IQueryable<T>>().Setup(m => m.ElementType).Returns(elementsAsQueryable.ElementType);
         dbSetMock.As<IQueryable<T>>().Setup(m => m.GetEnumerator()).Returns(() => elementsAsQueryable.GetEnumerator());
 
-        // Agregar soporte para operaciones asíncronas
         dbSetMock.As<IAsyncEnumerable<T>>()
             .Setup(m => m.GetAsyncEnumerator(It.IsAny<CancellationToken>()))
             .Returns(new TestAsyncEnumerator<T>(elements.GetEnumerator()));
@@ -85,7 +84,6 @@ public class GetBooksQueryHandlerTests
         return dbSetMock;
     }
 
-    // Agregar esta clase auxiliar
     public class TestAsyncEnumerator<T> : IAsyncEnumerator<T>
     {
         private readonly IEnumerator<T> _inner;

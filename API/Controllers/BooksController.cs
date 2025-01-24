@@ -33,10 +33,13 @@ public class BooksController : ControllerBase
         return result;
     }
 
-    [HttpGet("author/{authorId}")]
+    [HttpGet("byauthor/{authorId}")]
+    [ProducesResponseType(typeof(List<BookDto>), StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status404NotFound)]
     public async Task<ActionResult<List<BookDto>>> GetByAuthor(int authorId)
     {
-        return await _mediator.Send(new GetBooksByAuthorQuery(authorId));
+        var result = await _mediator.Send(new GetBooksByAuthorQuery(authorId));
+        return Ok(result);
     }
 
     [HttpPost]
