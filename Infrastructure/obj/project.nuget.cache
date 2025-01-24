@@ -1,0 +1,29 @@
+{
+  "version": 2,
+  "dgSpecHash": "2He3csMd54M=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\aguss\\source\\repos\\Library\\Infrastructure\\Infrastructure.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\aguss\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
+    "C:\\Users\\aguss\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
+    "C:\\Users\\aguss\\.nuget\\packages\\fluentvalidation\\11.11.0\\fluentvalidation.11.11.0.nupkg.sha512",
+    "C:\\Users\\aguss\\.nuget\\packages\\mediatr\\12.4.1\\mediatr.12.4.1.nupkg.sha512",
+    "C:\\Users\\aguss\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
+    "C:\\Users\\aguss\\.nuget\\packages\\microsoft.entityframeworkcore\\9.0.0-preview.1.24081.2\\microsoft.entityframeworkcore.9.0.0-preview.1.24081.2.nupkg.sha512",
+    "C:\\Users\\aguss\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\9.0.0-preview.1.24081.2\\microsoft.entityframeworkcore.abstractions.9.0.0-preview.1.24081.2.nupkg.sha512",
+    "C:\\Users\\aguss\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\9.0.0-preview.1.24081.2\\microsoft.entityframeworkcore.analyzers.9.0.0-preview.1.24081.2.nupkg.sha512",
+    "C:\\Users\\aguss\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\9.0.0-preview.1.24081.2\\microsoft.entityframeworkcore.relational.9.0.0-preview.1.24081.2.nupkg.sha512",
+    "C:\\Users\\aguss\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\9.0.0-preview.1.24080.9\\microsoft.extensions.caching.abstractions.9.0.0-preview.1.24080.9.nupkg.sha512",
+    "C:\\Users\\aguss\\.nuget\\packages\\microsoft.extensions.caching.memory\\9.0.0-preview.1.24080.9\\microsoft.extensions.caching.memory.9.0.0-preview.1.24080.9.nupkg.sha512",
+    "C:\\Users\\aguss\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\9.0.0-preview.1.24080.9\\microsoft.extensions.configuration.abstractions.9.0.0-preview.1.24080.9.nupkg.sha512",
+    "C:\\Users\\aguss\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\9.0.0-preview.1.24080.9\\microsoft.extensions.dependencyinjection.9.0.0-preview.1.24080.9.nupkg.sha512",
+    "C:\\Users\\aguss\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.0-preview.1.24080.9\\microsoft.extensions.dependencyinjection.abstractions.9.0.0-preview.1.24080.9.nupkg.sha512",
+    "C:\\Users\\aguss\\.nuget\\packages\\microsoft.extensions.logging\\9.0.0-preview.1.24080.9\\microsoft.extensions.logging.9.0.0-preview.1.24080.9.nupkg.sha512",
+    "C:\\Users\\aguss\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\9.0.0-preview.1.24080.9\\microsoft.extensions.logging.abstractions.9.0.0-preview.1.24080.9.nupkg.sha512",
+    "C:\\Users\\aguss\\.nuget\\packages\\microsoft.extensions.options\\9.0.0-preview.1.24080.9\\microsoft.extensions.options.9.0.0-preview.1.24080.9.nupkg.sha512",
+    "C:\\Users\\aguss\\.nuget\\packages\\microsoft.extensions.primitives\\9.0.0-preview.1.24080.9\\microsoft.extensions.primitives.9.0.0-preview.1.24080.9.nupkg.sha512",
+    "C:\\Users\\aguss\\.nuget\\packages\\mysqlconnector\\2.3.5\\mysqlconnector.2.3.5.nupkg.sha512",
+    "C:\\Users\\aguss\\.nuget\\packages\\pomelo.entityframeworkcore.mysql\\9.0.0-preview.1\\pomelo.entityframeworkcore.mysql.9.0.0-preview.1.nupkg.sha512"
+  ],
+  "logs": []
+}
